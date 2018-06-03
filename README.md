@@ -1,8 +1,6 @@
 # clever-webpack
 
-* webpack4新增内容
-
-1. 需要额外安装 webpack-cli
+## 配置基于webpack4.9.1
 
 * ## 代码分割 -- css
 
@@ -80,6 +78,10 @@ externals: {
 * ## UglifyJsPlugin
 
 压缩js 在webpack4时候默认已去掉UglifyJsPlugin 取而代之的是 uglifyjs-webpack-plugin 单独一个插件
+
+* 注意点
+
+1. 需要全局额外安装 webpack-cli
 
 > ## 参考资料
 
