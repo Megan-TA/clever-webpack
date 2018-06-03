@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "Out of the box, simplify the webpack configuration and support custom configurations",
   "main": "index.js",
-  "bin": "clever-webpack ./bin/sctipts.js",
   "scripts": {
     "dev": "webpack-dev-server --config ./build/webpack.dev.js",
     "prod": "webpack --progress --config ./build/webpack.prod.js"

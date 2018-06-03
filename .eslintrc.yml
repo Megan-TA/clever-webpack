@@ -5,12 +5,12 @@ env:
   es6: true
 parserOptions:
   ecmaVersion: 6
-  sourceType: 'module',
+  sourceType: module,
   ecmaFeatures: 
     jsx: true
 rules:
   eqeqeq: 0
-  indent: ["error", 4]
-extends: 'standard'
+  indent: [error, 4]
+extends: standard
 
     
