@@ -5,14 +5,14 @@ const path = require('path')
 
 module.exports = merge(baseWebpackCfg, {
     mode: 'development',
-    watch: true,
-    watchOptions: {
-        ignored: /node_modules/,
-        // 防止重复保存频繁重新编译,500毫米内重复保存不打包
-        aggregateTimeout: 500,
-        // 每秒询问的文件变更的次数
-        poll: 1000
-    },
+    // watch: true,
+    // watchOptions: {
+    //     ignored: /node_modules/,
+    //     // 防止重复保存频繁重新编译,500毫米内重复保存不打包
+    //     aggregateTimeout: 500,
+    //     // 每秒询问的文件变更的次数
+    //     poll: 1000
+    // },
     devtool: 'eval-source-map',
     devServer: {
         inline: true,
@@ -22,7 +22,9 @@ module.exports = merge(baseWebpackCfg, {
         compress: false,
         openPage: '../page/index.html',
         open: true,
-        clientLogLevel: 'none' 
+        clientLogLevel: 'none',
+        hot: true,
+        hotOnly: true
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin()
